@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Resume Craft</title>
+  <link rel="stylesheet" href="style.4css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #aad4ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .site-header {
+      background-color: #001f3f;
+      padding: 1rem;
+    }
+    .logo {
+      color: #aad4ff;
+      margin: 0;
+    }
+    .tabs {
+      display: flex;
+      border-bottom: 3px solid #007acc;
+      cursor: pointer;
+      user-select: none;
+    }
+    .tab {
+      padding: 12px 25px;
+      background-color: #001f3f;
+      color: #aad4ff;
+      font-weight: 600;
+      border: 1px solid #007acc;
+      border-bottom: none;
+      margin-right: 6px;
+      border-radius: 8px 8px 0 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .tab:hover:not(.active) {
+      background-color: #004080;
+      color: #ffffff;
+    }
+    .tab.active {
+      background-color: #007acc;
+      color: #000;
+      border-bottom: 3px solid #000;
+    }
+    .tab-content {
+      padding: 25px;
+      border: 1px solid #007acc;
+      border-radius: 0 8px 8px 8px;
+      background-color: #000;
+      color: #aad4ff;
+      min-height: 300px;
+    }
+    footer {
+      background: #001f3f;
+      color: #aad4ff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Resume Craft! Unlock Your Potential!</h1>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <a class="tab" href="index.html">Home</a>
+    <a class="tab" href="services.html">Services</a>
+    <a class="tab active" href="contact.html">Contact</a>
+  </div>
+
+  <div class="tab-content">
+    <h2>Contact Me</h2>
+    <p><strong>Location:</strong> Elizabeth, NJ</p>
+    <p>Have questions or want to get started? Fill out the form below or email me directly at <a href="mailto:yoma323.df@gmail.com">yoma323.df@gmail.com</a>.</p>
+    <form action="https://formspree.io/f/mqabzjew" method="POST" enctype="multipart/form-data">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+    
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+    
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    
+      <label for="resume">Upload Resume or Cover Letter (PDF, DOC, DOCX):</label><br>
+      <input type="file" id="resume" name="upload" accept=".pdf,.doc,.docx"><br><br>
+    
+      <button type="submit">Send Message</button>
+    </form>
+
+
+  <footer>
+    <p>&copy; 2025 Resume Craft! Unlock Your Potential!</p>
+  </footer>
+</body>
+</html>
