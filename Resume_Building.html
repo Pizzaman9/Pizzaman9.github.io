@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Resume Craft by Daniel! Unlock Your Potential!</title>
+  <link rel="stylesheet" href="style.4css" />
+  <style>
+   body {
+      background-color: #000;
+      color: #aad4ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .site-header {
+      background-color: #001f3f;
+      padding: 1rem;
+    }
+    .logo {
+      color: #aad4ff;
+      margin: 0;
+    }
+    .tabs {
+      display: flex;
+      border-bottom: 3px solid #007acc;
+      cursor: pointer;
+      user-select: none;
+    }
+    .tab {
+      padding: 12px 25px;
+      background-color: #001f3f;
+      color: #aad4ff;
+      font-weight: 600;
+      border: 1px solid #007acc;
+      border-bottom: none;
+      margin-right: 6px;
+      border-radius: 8px 8px 0 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .tab:hover:not(.active) {
+      background-color: #004080;
+      color: #ffffff;
+    }
+    .tab.active {
+      background-color: #007acc;
+      color: #000;
+      border-bottom: 3px solid #000;
+    }
+    .tab-content {
+      display: none;
+      padding: 25px;
+      border: 1px solid #007acc;
+      border-radius: 0 8px 8px 8px;
+      background-color: #000;
+      color: #aad4ff;
+      min-height: 300px;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .cta-button {
+      background: #007acc;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    footer {
+      background: #001f3f;
+      color: #aad4ff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Resume Craft! Unlock Your Potential!</h1>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <a class="tab" href="Resume_Building.html">Home</a>
+    <a class="tab" href="services.html">Services</a>
+    <a class="tab" href="contact.html">Contact</a>
+  </div>
+
+  <div class="tab-content active" id="home">
+    <h2>Welcome to Resume Craft!</h2>
+    <p>Get a professionally crafted resume to elevate your job prospects. Whether you're starting out or need a refresh, I have you covered.</p>
+    <a href="services.html" class="cta-button">Explore Services</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Resume Craft! Unlock Your Potential!</p>
+  </footer>
+</body>
+</html>
